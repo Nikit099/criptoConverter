@@ -16,7 +16,9 @@
                 @update="changeSelectedFirst"
                 :selectedArray="selected"
               />
-              <button @click="revers"></button>
+              <button @click="revers">
+                <img src="@/img/two-arrows.png" alt="two-arrows" />
+              </button>
               <CriptoSelect
                 :modelValue="selectedSecond"
                 @update="changeSelectedSecond"
@@ -198,5 +200,8 @@ button:active {
 }
 .chartB {
   margin-top: 20px;
+}
+img {
+  width: 100%;
 }
 </style>

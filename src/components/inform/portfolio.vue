@@ -9,7 +9,7 @@
         @click="focusElem"
       >
         <div class="img">
-          <img :src="elem.img" alt="" />
+          <img :src="elem.img" alt="criptoIMG" />
         </div>
 
         <p>{{ elem.name }}</p>
@@ -26,8 +26,10 @@
           />
         </div>
 
-        <div class="scale" v-if="elem.scale < 101">{{ elem.percentages }}%</div>
-        <div class="scale" v-else>Too much</div>
+        <div class="scale" v-if="elem.scale < 101 && elem.scale > -1">
+          {{ elem.percentages }}%
+        </div>
+        <div class="scale" v-else>От 100 до 0</div>
       </li>
     </ul>
   </div>
@@ -80,7 +82,7 @@ img {
   width: 100%;
 }
 .scale {
-  min-width: 30px;
+  width: 100px;
 }
 .active {
   background-color: rgb(224, 224, 224);

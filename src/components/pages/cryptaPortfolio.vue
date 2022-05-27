@@ -164,6 +164,4 @@ p {
   margin-top: 40px;
   text-align: center;
 }
-.elem {
-}
 </style>
