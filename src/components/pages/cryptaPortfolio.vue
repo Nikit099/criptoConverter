@@ -142,18 +142,38 @@ export default {
 };
 </script>
 <style scoped>
+@media (max-width: 1023px) {
+  .portf {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chart {
+    width: 400px;
+  }
+}
+@media (max-width: 530px) {
+  .chart {
+    width: 300px;
+  }
+}
+@media (min-width: 1023px) {
+  .portf {
+    margin-top: 150px;
+  }
+}
 .containerPort {
   max-width: 1245px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .portf {
-  margin-top: 150px;
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
 }
 .chart {
-  width: 500px;
 }
 h2 {
   text-align: center;

@@ -28,4 +28,7 @@ export default {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+body {
+  background: rgb(238, 238, 238);
+}
 </style>

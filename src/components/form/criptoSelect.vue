@@ -29,10 +29,19 @@ export default {
 };
 </script>
 <style scoped>
+@media (max-width: 530px) {
+  select {
+    width: 200px;
+  }
+}
+@media (min-width: 530px) {
+  select {
+    width: 293px;
+  }
+}
 select {
   background-color: #fbfbfb;
   border: 1px solid #e8e8e8;
-  width: 293px;
   height: 27px;
   padding: 5px;
   border-radius: 5px;

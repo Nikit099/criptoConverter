@@ -57,20 +57,34 @@ export default {
 };
 </script>
 <style scoped>
-.list {
-  list-style-type: none;
-  background: rgb(238, 238, 238);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 25%);
-  padding: 0;
+@media (max-width: 1023px) {
+  .list {
+    list-style-type: none;
+    background: rgb(238, 238, 238);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 25%);
+    padding: 0;
+    max-width: 400px;
+  }
 }
+@media (min-width: 1023px) {
+  .list {
+    list-style-type: none;
+    background: rgb(238, 238, 238);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 25%);
+    padding: 0;
+    width: 500px;
+  }
+}
+
 li {
   padding: 10px;
-  min-width: 500px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
   border-bottom: 1px solid rgb(206, 206, 206);
+  transition: 0.5s;
 }
 li:hover {
   background: rgb(224, 224, 224);

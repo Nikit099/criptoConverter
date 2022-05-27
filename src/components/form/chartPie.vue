@@ -49,9 +49,7 @@ export default {
 </script>
 <style scoped>
 .formChart {
-  max-width: 100%;
 }
 #myChart {
-  width: 100%;
 }
 </style>

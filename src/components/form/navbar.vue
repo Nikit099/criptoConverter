@@ -9,12 +9,23 @@
 <script>
 export default {};
 </script>
-<style>
+<style scoped>
+@media (max-width: 530px) {
+  .link {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+@media (min-width: 530px) {
+  .link {
+    font-size: 17px;
+  }
+}
 .link {
-  text-decoration: none;
-  margin: 0 20px;
   color: #000;
-  font-size: 17px;
+  margin: 0 15px;
+
+  text-decoration: none;
   transition: 0.3s;
 }
 .link:hover {

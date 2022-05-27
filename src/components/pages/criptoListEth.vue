@@ -152,6 +152,27 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 530px) {
+  .flexSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .convertList {
+    height: 300px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 530px) {
+  .convertList {
+    height: 245px;
+  }
+}
 h2 {
   text-align: center;
 }
@@ -160,12 +181,13 @@ h1 {
   margin-bottom: 10px;
 }
 .containerList {
+  padding: 20px;
   max-width: 945px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 .convertList {
   max-width: 810px;
-  height: 245px;
+
   background-color: #f2f2f2;
   margin: 0 auto;
   border-radius: 8px;
@@ -182,8 +204,8 @@ h1 {
 }
 .flexSelect {
   display: flex;
-  align-items: center;
-  gap: 5px;
+  gap: 7px;
+  justify-content: space-around;
 }
 .resultConvert {
   text-align: center;
